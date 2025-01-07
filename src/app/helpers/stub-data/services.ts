@@ -28,7 +28,7 @@ const OUR_SERVICES: Service[] = [
   {
     name: "DevOps",
     description:
-      "Securely store, access, and share your files from anywhere with our cloud storage service.",
+      "Streamline development, deployment, and operations with automated workflows, continuous integration, and scalable infrastructure solutions.",
     image: "/dev-ops.png",
     link: "#service-4",
     id: 4,

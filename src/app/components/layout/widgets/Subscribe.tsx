@@ -4,7 +4,7 @@ import Button from "@/app/components/reusable/Button";
 
 export default function Subscribe() {
   return (
-    <div className="w-screen flex flex-col items-center justify-center p-6 gap-4">
+    <div className=" flex w-[94vw] flex-col items-center justify-center p-6 gap-4">
       <Title title="Are you ready to start your project?" />
       <SubTitle text="Let’s discuss about your amazing idea." />
       <span className="font-light text-sm">

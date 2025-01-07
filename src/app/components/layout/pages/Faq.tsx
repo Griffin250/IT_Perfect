@@ -7,7 +7,7 @@ import Question from "@/app/components/reusable/Question";
 
 export default function Faq() {
   return (
-    <div id="faq" className="w-screen flex flex-col items-center p-6 mt-6">
+    <div id="faq" className="flex w-[94vw] flex-col items-center p-6 mt-6">
       <Title title="FAQ" />
       <SubTitle text="Answers that you are looking for" />
       <div className="w-full my-6 gap-4">

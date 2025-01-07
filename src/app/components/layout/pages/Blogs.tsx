@@ -8,7 +8,7 @@ export default function Blogs() {
   return (
     <div
       id="blog"
-      className="w-screen min-h-screen flex flex-col items-center p-6 mt-6"
+      className="min-h-screen w-[94vw] flex flex-col items-center p-6 mt-6"
     >
       <Title title="Blogs" />
       <SubTitle text="Check this valuable insights" />

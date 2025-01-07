@@ -23,7 +23,7 @@ export default function ServiceCard({
   const isEven = index % 2 == 0;
   return (
     <div
-      className={`w-screen flex ${
+      className={`flex ${
         isEven ? "flex-col lg:flex-row-reverse" : "flex-col lg:flex-row"
       } justify-between items-center my-3`}
     >

@@ -1,13 +1,18 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import { navLinks } from "@/app/helpers/stub-data/nav-links";
 import SideDrawer from "./Drawer";
 import Logo from "./Logo";
 import Button from "@/app/components/reusable/Button";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 
 export default function Header() {
+  const pathname = usePathname();
+  const isDashboard = pathname === "/dashboard";
+
   return (
     <header className="flex p-3 lg:p-6 items-center justify-between fixed z-50 top-0 bg-white w-screen shadow-lg">
       <Logo />
@@ -23,14 +28,30 @@ export default function Header() {
           ))}
         </ul>
       </nav>
-      <div className="hidden lg:flex flex-row items-center gap-3">
-        <Link href="#home">
-          <span className="text-primary mr-6">Login</span>
-        </Link>
-        <Link href="#home">
-          <Button className="rounded-[1.875rem]">Get Started</Button>
-        </Link>
-      </div>
+      <SignedOut>
+        <div className="hidden lg:flex flex-row items-center gap-3">
+          <Link href="#home">
+            <span className="text-primary mr-6">
+              <SignInButton mode="modal" />
+            </span>
+          </Link>
+          <Link href="#home">
+            <Button className="rounded-[1.875rem]">Get Started</Button>
+          </Link>
+        </div>
+      </SignedOut>
+
+      <SignedIn>
+        <div className="hidden lg:flex flex-row items-center gap-3">
+          <Link href={isDashboard ? "/" : "/"}>
+            <Button className="rounded-[1.875rem]">
+              {isDashboard ? "Home" : "Dashboard"}
+            </Button>
+          </Link>
+          <UserButton />
+        </div>
+      </SignedIn>
+
       <div className="flex lg:hidden">
         <SideDrawer
           buttonChildren={
