@@ -25,8 +25,7 @@ export default function Footer() {
   ];
 
   const contactInfo = [
-    { icon: "✉️", label: "Email", value: "contact@itperfect.fr" },
-    { icon: "", label: "Address", value: "76 Rue d'Auge, 14000 Caen, France", href: "https://www.google.com/maps/search/76+Rue+d'Auge,+14000+Caen,+France" },
+    { icon: "✉️", label: "Email", value: "contact@itperfect.fr", href: "mailto:contact@itperfect.fr" },
   ];
 
   return (
@@ -119,7 +118,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-bold mb-6 text-white">Contact</h3>
-            <ul className="space-y-4">
+            <ul className="space-y-4 mb-4">
               {contactInfo.map((item, index) => (
                 <li key={index} className="flex gap-3">
                   <span className="text-xl flex-shrink-0">{item.icon}</span>
@@ -141,6 +140,19 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+            {/* Mini Google Map */}
+            <div className="rounded-lg overflow-hidden shadow-md h-40 w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.189632937363!2d-0.3610046!3d49.1793805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0be8f4f1f1f1f%3A0x1f1f1f1f1f1f1f1f!2s76%20Rue%20d'Auge%2C%2014000%20Caen%2C%20France!5e0!3m2!1sen!2s!4v1705978800000"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="IT Perfect Office Location - 76 Rue d'Auge, Caen, France"
+              ></iframe>
+            </div>
           </div>
         </div>
 
