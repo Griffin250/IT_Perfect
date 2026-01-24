@@ -1,6 +1,10 @@
-# IT Perfect
+<div align="center">
+  <img src="/logo.svg" alt="IT Perfect Logo" width="120" height="120" />
+  
+  # IT Perfect
 
-**Where Technology Meets Ingenuity** 🚀
+  **Where Technology Meets Ingenuity** 🚀
+</div>
 
 A modern, full-featured web application for IT Perfect's digital solutions company. Built with Next.js 15, TypeScript, and Tailwind CSS for stunning performance and user experience.
 
@@ -349,5 +353,3 @@ MIT License - Feel free to use and modify for your needs.
 Built with ❤️ by IT Perfect Team
 
 *Where Technology Meets Ingenuity* 🚀
-#   I T _ P e r f e c t  
- 
