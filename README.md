@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="/logo.svg" alt="IT Perfect Logo" width="120" height="120" />
+  <img src="/companies/IT_PERFECT_LOGO.png" alt="IT Perfect Logo" width="120" height="120" />
   
   # IT Perfect
 
