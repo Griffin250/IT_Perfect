@@ -24,8 +24,8 @@ export default function ProjectCard({
         width={500}
         height={500}
         alt={project.name}
-        layout="responsive"
-        className={`rounded-[1.25rem] ${imageClassNames}`}
+        className={`rounded-[1.25rem] w-full h-auto ${imageClassNames}`}
+        style={{ width: '100%', height: 'auto' }}
       />
     </Link>
   );

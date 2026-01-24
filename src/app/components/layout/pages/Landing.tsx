@@ -1,42 +1,65 @@
 import Image from "next/image";
-
-import TextBadge from "@/app/components/reusable/TextBadge";
-import Button from "@/app/components/reusable/Button";
-import SeeMore from "@/app/components/reusable/SeeMore";
+import Link from "next/link";
 
 export default function Landing() {
   return (
     <div
       id="home"
-      className="h-screen w-[94vw] flex flex-col lg:flex-row justify-between items-start py-6 mt-12 lg:mt-6"
+      className="w-full flex flex-col lg:flex-row justify-between items-center px-4 md:px-6 lg:px-12 py-12 lg:py-20 min-h-screen max-w-7xl mx-auto"
     >
-      <div className="my-auto m-6 h-[60vh] flex-1 flex flex-col items-start justify-around gap-1 lg:gap-4">
-        <p className="text-6xl font-bold">
-          Where <span className="text-primary">Technology</span> Meets
-          Ingenuity.
-        </p>
-        <span className="font-light text-3xl">
-          We do not just code, we conquer. Your one stop service center to
-          manage your businesses and needs.
-        </span>
-        <div className="flex gap-4 w-full lg:w-[40vw]">
-          <TextBadge label="successful projects" count={32} />
-          <TextBadge label="satisfied clients" count={22} />
+      <div className="w-full lg:w-1/2 flex flex-col gap-6 mb-10 lg:mb-0">
+        <div>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+            Where <span className="text-blue-600 dark:text-blue-400">Technology</span> Meets
+            <span className="block">Ingenuity</span>
+          </h1>
         </div>
-        <div className="flex  items-center  w-full lg:w-[40vw]">
-          <div className="w-[11.688rem]">
-            <Button className="rounded-[1.875rem]">Book a free call</Button>
+
+        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed">
+          We don't just code—we conquer. Your ultimate service partner for building cutting-edge digital solutions that drive real business results.
+        </p>
+
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 pt-2">
+          <div className="flex items-center gap-3">
+            <div className="text-4xl">✓</div>
+            <div>
+              <div className="text-sm text-gray-500 dark:text-gray-300">32+</div>
+              <div className="font-semibold text-gray-900 dark:text-white">Successful Projects</div>
+            </div>
           </div>
-          <SeeMore classNames="ml-6" />
+          <div className="flex items-center gap-3">
+            <div className="text-4xl">😊</div>
+            <div>
+              <div className="text-sm text-gray-500 dark:text-gray-300">22+</div>
+              <div className="font-semibold text-gray-900 dark:text-white">Satisfied Clients</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-4 pt-4">
+          <Link
+            href="/contact"
+            className="px-8 py-4 bg-blue-600 text-white rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 hover:shadow-lg hover:scale-105 text-center"
+          >
+            Book a Free Call
+          </Link>
+          <Link
+            href="#services"
+            className="px-8 py-4 border-2 border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 rounded-full font-semibold hover:bg-blue-50 dark:hover:bg-slate-800 transition-all duration-300 text-center"
+          >
+            Learn More
+          </Link>
         </div>
       </div>
-      <div className="hidden lg:flex w-[50vw] h-full m-6 cursor-pointer">
+
+      <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
         <Image
-          width={500}
-          height={500}
+          width={600}
+          height={600}
           src="/landing.png"
-          layout="responsive"
           alt="Landing Image"
+          className="w-full max-w-md lg:max-w-lg animate-float"
+          style={{ width: '100%', height: 'auto' }}
         />
       </div>
     </div>

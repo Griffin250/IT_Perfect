@@ -32,8 +32,8 @@ export default function ServiceCard({
           width={340}
           height={240}
           src={image}
-          layout="responsive"
           alt="Web development Image"
+          style={{ width: '100%', height: 'auto' }}
         />
       </div>
       <div className={`flex-1 flex flex-col gap-4 mx-6`}>

@@ -12,8 +12,8 @@ export default function Logo({ className }: LogoProps) {
         src="/logo.png"
         width={250}
         height={100}
-        alt="Picture of the author"
-        className={` cursor-pointer w-[5.625rem] md:w-[10.625rem] lg:w-[15.625rem] ${className}`}
+        alt="IT Perfect Logo"
+        className={` cursor-pointer w-[5.625rem] md:w-[10.625rem] lg:w-[15.625rem] dark:invert ${className}`}
       />
     </Link>
   );

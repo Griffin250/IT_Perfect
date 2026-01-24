@@ -1,29 +1,29 @@
-import Blogs from "./components/layout/pages/Blogs";
-import Faq from "./components/layout/pages/Faq";
+"use client";
+
 import Landing from "./components/layout/pages/Landing";
-import Projects from "./components/layout/pages/Projects";
-import Services from "./components/layout/pages/Services";
-import Team from "./components/layout/pages/Team";
-import Testimonials from "./components/layout/pages/Testimonials";
-import Video from "./components/layout/pages/Video";
 import Footer from "./components/layout/widgets/Footer";
 import Header from "./components/layout/widgets/Header";
-import Subscribe from "./components/layout/widgets/Subscribe";
+import WhyChooseUs from "./components/layout/pages/WhyChooseUs";
+import Stats from "./components/layout/pages/Stats";
+import CTA from "./components/layout/pages/CTA";
+import HomeFaq from "./components/layout/pages/HomeFaq";
+import TrustedCompanies from "./components/layout/pages/TrustedCompanies";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <div className="flex mx-6 min-h-screen flex-col items-center justify-center">
-        <Landing />
-        <Video />
-        <Services />
-        <Team />
-        <Projects />
-        <Blogs />
-        <Testimonials />
-        <Faq />
-        <Subscribe />
+      <div className="flex mx-auto min-h-screen flex-col items-center justify-center">
+        <div className="w-full">
+          <Landing />
+        </div>
+        <Stats />
+        <div className="w-full px-6">
+          <WhyChooseUs />
+        </div>
+        <TrustedCompanies />
+        <CTA />
+        <HomeFaq />
       </div>
       <Footer />
     </>

@@ -11,7 +11,9 @@ type Employee = {
   name: string;
   position: string;
   image: string;
-  linkedIn: string;
+  linkedIn?: string;
+  github?: string;
+  website?: string;
 };
 
 type Project = {

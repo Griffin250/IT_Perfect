@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
@@ -12,6 +13,7 @@ import { navLinks } from "@/app/helpers/stub-data/nav-links";
 import Link from "next/link";
 import Logo from "./Logo";
 import Button from "@/app/components/reusable/Button";
+import ThemeToggle from "@/app/components/reusable/ThemeToggle";
 
 interface Props {
   buttonChildren: React.ReactNode;
@@ -19,6 +21,7 @@ interface Props {
 
 export default function SideDrawer({ buttonChildren }: Props) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
@@ -29,33 +32,34 @@ export default function SideDrawer({ buttonChildren }: Props) {
       <Logo className="m-6 ml-3 bg-white" />
       <Divider />
       <List>
-        {navLinks.map((link) => (
-          <ListItem
-            key={link.name}
-            className="bg-white hover:bg-gray-100 p-3 hover:rounded-md capitalize"
-            disablePadding
-          >
-            <Link href={link.href}>
-              <ListItemText>{link.name}</ListItemText>
-            </Link>
-          </ListItem>
-        ))}
+        {navLinks.map((link) => {
+          const isActive = pathname === link.href;
+          return (
+            <ListItem
+              key={link.name}
+              className={`p-3 hover:rounded-md capitalize transition-colors ${
+                isActive
+                  ? "bg-primary text-white rounded-md"
+                  : "bg-white hover:bg-gray-100"
+              }`}
+              disablePadding
+            >
+              <Link href={link.href} className="w-full">
+                <ListItemText>{link.name}</ListItemText>
+              </Link>
+            </ListItem>
+          );
+        })}
       </List>
       <Divider />
       <List>
-        <ListItem disablePadding>
-          <ListItemButton className="flex items-center capitalize">
-            <Link href="#home">
-              <span className="text-primary ml-1">Login</span>
+        <ListItem disablePadding className="p-3">
+          <div className="w-full flex items-center gap-3">
+            <Link href="/contact" className="flex-1">
+              <Button className="rounded-[1.875rem] w-full">Get Started</Button>
             </Link>
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton className="flex items-center capitalize">
-            <Link href="#home">
-              <Button className="rounded-[1.875rem]">Get Started</Button>
-            </Link>
-          </ListItemButton>
+            <ThemeToggle />
+          </div>
         </ListItem>
       </List>
     </Box>
@@ -66,7 +70,7 @@ export default function SideDrawer({ buttonChildren }: Props) {
       <button className="lg:hidden" onClick={toggleDrawer(true)}>
         {buttonChildren}
       </button>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
+      <Drawer open={open} onClose={toggleDrawer(false)} anchor="right">
         {DrawerList}
       </Drawer>
     </div>

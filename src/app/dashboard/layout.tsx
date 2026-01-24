@@ -1,14 +1,4 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-
-import "@/app/globals.css";
-// import Header from "../components/layout/widgets/Header";
-// import Footer from "../components/layout/widgets/Footer";
-
-const roboto = Roboto({
-  weight: ["100", "300", "400", "500", "700", "900"],
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "IT Perfect - Dashboard",
@@ -20,13 +10,5 @@ export default function DashboardLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={roboto.className}>
-        {/* <Header /> */}
-        {children}
-        {/* <Footer /> */}
-      </body>
-    </html>
-  );
+  return <>{children}</>;
 }
