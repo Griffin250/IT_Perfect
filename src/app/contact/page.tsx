@@ -14,13 +14,7 @@ export default function ContactPage() {
       details: ["contact@itperfect.fr"],
     },
     {
-      icon: "📞",
-      title: "Call Us",
-      description: "Speak directly with our team during business hours",
-      details: ["+33 7 51 23 98 63"],
-    },
-    {
-      icon: "📍",
+      icon: "",
       title: "Visit Us",
       description: "Find us at our office location",
       details: ["76 Rue d'Auge, 14000 Caen, France"],
@@ -190,7 +184,7 @@ export default function ContactPage() {
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
-                allowFullScreen=""
+                allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="IT Perfect Office Location - 76 Rue d'Auge, Caen, France"
