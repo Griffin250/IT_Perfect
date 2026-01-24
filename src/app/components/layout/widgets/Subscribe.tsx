@@ -74,7 +74,7 @@ export default function Subscribe() {
             
             {isSubmitted && (
               <div className="bg-green-400 bg-opacity-20 border border-green-400 text-green-100 px-4 py-3 rounded-full text-center text-sm animate-in fade-in">
-                ✓ Thanks for subscribing! We'll be in touch soon.
+                {"✓ Thanks for subscribing! We'll be in touch soon."}
               </div>
             )}
           </form>

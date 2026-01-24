@@ -48,7 +48,7 @@ export default function WhyChooseUs() {
             Why Choose IT Perfect?
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            We're committed to delivering excellence in every project. Here's what sets us apart.
+            {"We're committed to delivering excellence in every project. Here's what sets us apart."}
           </p>
         </div>
 

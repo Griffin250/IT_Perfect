@@ -42,7 +42,7 @@ export default function CTA() {
                 Ready to Transform Your Vision?
               </h2>
               <p className="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto mb-2 leading-relaxed">
-                Let's collaborate to bring your ideas to life. Our expert team is ready to discuss your project and create something extraordinary together.
+                {"Let's collaborate to bring your ideas to life. Our expert team is ready to discuss your project and create something extraordinary together."}
               </p>
             </div>
 
@@ -116,7 +116,7 @@ export default function CTA() {
                 
                 {isSubmitted && (
                   <div className="bg-green-400/20 border border-green-300 text-green-100 px-4 py-2 rounded-full text-center text-sm animate-in fade-in">
-                    ✓ Thanks for subscribing! We'll be in touch soon.
+                    {"✓ Thanks for subscribing! We'll be in touch soon."}
                   </div>
                 )}
               </form>

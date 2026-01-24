@@ -58,7 +58,7 @@ export default function ContactPage() {
                 Get in Touch
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                Have a project in mind? We'd love to hear about it. Let's discuss how we can help transform your vision into reality.
+                {"Have a project in mind? We'd love to hear about it. Let's discuss how we can help transform your vision into reality."}
               </p>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function ContactPage() {
                   Send us a Message
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 mb-8">
-                  Fill out the form below and we'll get back to you as soon as possible.
+                  {"Fill out the form below and we'll get back to you as soon as possible."}
                 </p>
                 <ContactForm />
               </div>
@@ -174,7 +174,7 @@ export default function ContactPage() {
               Ready to Start Your Project?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Don't wait! Let's discuss your ideas and create something amazing together.
+              {"Don't wait! Let's discuss your ideas and create something amazing together."}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

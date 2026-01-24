@@ -106,7 +106,7 @@ export default function Services() {
           Ready to get started?
         </h2>
         <p className="text-blue-100 mb-6">
-          Let's discuss which service is right for your project and bring your vision to life.
+          {"Let's discuss which service is right for your project and bring your vision to life."}
         </p>
         <Link
           href="/contact"

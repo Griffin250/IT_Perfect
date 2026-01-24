@@ -38,7 +38,7 @@ export default function Testimonials() {
               </div>
               
               <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed flex-1 mb-4">
-                "{testimonial.description}"
+                {`"${testimonial.description}"`}
               </p>
               
               <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">

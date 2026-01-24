@@ -61,10 +61,10 @@ export default function Projects() {
       {/* CTA Section */}
       <div className="w-full max-w-4xl mt-16 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-slate-800 dark:to-slate-900 rounded-3xl p-8 md:p-12 text-center">
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-3">
-          Interested in working with us?
+          {"Interested in working with us?"}
         </h2>
         <p className="text-gray-600 dark:text-gray-300 mb-6">
-          Let's discuss how we can bring your vision to life with cutting-edge solutions.
+          {"Let's discuss how we can bring your vision to life with cutting-edge solutions."}
         </p>
         <Link
           href="/contact"

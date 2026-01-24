@@ -64,7 +64,7 @@ export default function About() {
                 About <span className="text-blue-600 dark:text-blue-400">IT Perfect</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                We're a team of passionate professionals dedicated to transforming businesses through innovative technology solutions.
+                {"We're a team of passionate professionals dedicated to transforming businesses through innovative technology solutions."}
               </p>
             </div>
 
@@ -228,7 +228,7 @@ export default function About() {
               Ready to Join Our Success Story?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Let's work together to create something amazing. We're excited to hear about your project.
+              {"Let's work together to create something amazing. We're excited to hear about your project."}
             </p>
             <Link
               href="/contact"

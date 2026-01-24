@@ -19,7 +19,7 @@ export default function Team() {
         <Title title="Our Team" />
         <SubTitle text="Meet the talented people behind our success" />
         <p className="mt-4 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-          We're a diverse team of experienced professionals passionate about delivering excellence and driving innovation.
+          {"We're a diverse team of experienced professionals passionate about delivering excellence and driving innovation."}
         </p>
       </div>
 

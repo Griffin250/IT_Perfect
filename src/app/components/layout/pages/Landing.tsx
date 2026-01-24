@@ -16,7 +16,7 @@ export default function Landing() {
         </div>
 
         <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed">
-          We don't just code—we conquer. Your ultimate service partner for building cutting-edge digital solutions that drive real business results.
+          {"We don't just code—we conquer. Your ultimate service partner for building cutting-edge digital solutions that drive real business results."}
         </p>
 
         <div className="flex flex-col md:flex-row gap-6 md:gap-8 pt-2">

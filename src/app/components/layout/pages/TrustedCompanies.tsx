@@ -12,7 +12,7 @@ export default function TrustedCompanies() {
             Trusted by Leading Companies
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300">
-            We've had the privilege to work with innovative companies across industries
+            {"We've had the privilege to work with innovative companies across industries"}
           </p>
         </div>
 

@@ -67,7 +67,7 @@ export default function EmployeeCard({ employee }: EmployeeCardProps) {
         <div className="flex items-center gap-3 mt-4 pt-4 border-t border-slate-200 dark:border-slate-700">
           {isValidLinkedIn && (
             <Link
-              href={employee.linkedIn}
+              href={employee.linkedIn!}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-400 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-colors duration-300"
@@ -78,7 +78,7 @@ export default function EmployeeCard({ employee }: EmployeeCardProps) {
           )}
           {isValidGitHub && (
             <Link
-              href={employee.github}
+              href={employee.github!}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-800 dark:text-slate-300 hover:bg-slate-900 hover:text-white dark:hover:bg-slate-800 transition-colors duration-300"
@@ -89,7 +89,7 @@ export default function EmployeeCard({ employee }: EmployeeCardProps) {
           )}
           {isValidWebsite && (
             <Link
-              href={employee.website}
+              href={employee.website!}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-400 hover:bg-purple-600 hover:text-white dark:hover:bg-purple-600 transition-colors duration-300"

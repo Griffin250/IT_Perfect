@@ -231,7 +231,7 @@ export default function ContactForm() {
       {/* Success Message */}
       {submitted && (
         <div className="bg-green-100 dark:bg-green-900 border border-green-400 dark:border-green-600 text-green-700 dark:text-green-200 px-4 py-3 rounded-lg animate-in fade-in">
-          ✓ Thank you! We've received your message and will get back to you soon.
+          {"✓ Thank you! We've received your message and will get back to you soon."}
         </div>
       )}
 
