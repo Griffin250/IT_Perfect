@@ -23,8 +23,8 @@ export default function ContactPage() {
       icon: "📍",
       title: "Visit Us",
       description: "Find us at our office location",
-      details: ["Paris, France"],
-      link: "https://maps.app.goo.gl/1MeUxYUzqEfsXk696?g_st=awb",
+      details: ["76 Rue d'Auge, 14000 Caen, France"],
+      link: "https://maps.app.goo.gl/JF8kXjPqyZ7VzPGx8",
     },
   ];
 
@@ -174,6 +174,37 @@ export default function ContactPage() {
                   </p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Google Map Section */}
+        <section className="w-full px-4 md:px-6 py-16 md:py-24 bg-gray-100 dark:bg-slate-800">
+          <div className="w-full max-w-6xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+              Find Our Office
+            </h2>
+            <div className="rounded-2xl overflow-hidden shadow-2xl h-96">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.189632937363!2d-0.3610046!3d49.1793805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0be8f4f1f1f1f%3A0x1f1f1f1f1f1f1f1f!2s76%20Rue%20d'Auge%2C%2014000%20Caen%2C%20France!5e0!3m2!1sen!2s!4v1705978800000"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="IT Perfect Office Location - 76 Rue d'Auge, Caen, France"
+              ></iframe>
+            </div>
+            <div className="mt-6 text-center">
+              <a
+                href="https://maps.app.goo.gl/JF8kXjPqyZ7VzPGx8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-300"
+              >
+                Open in Google Maps
+              </a>
             </div>
           </div>
         </section>

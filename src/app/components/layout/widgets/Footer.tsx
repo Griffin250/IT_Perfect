@@ -27,7 +27,7 @@ export default function Footer() {
   const contactInfo = [
     { icon: "✉️", label: "Email", value: "contact@itperfect.fr" },
     { icon: "📱", label: "Phone", value: "+33 7 51 23 98 63" },
-    { icon: "📍", label: "Address", value: "Paris, France", href: "https://maps.app.goo.gl/1MeUxYUzqEfsXk696?g_st=awb" },
+    { icon: "📍", label: "Address", value: "76 Rue d'Auge, 14000 Caen, France", href: "https://maps.app.goo.gl/JF8kXjPqyZ7VzPGx8" },
   ];
 
   return (
@@ -126,7 +126,18 @@ export default function Footer() {
                   <span className="text-xl flex-shrink-0">{item.icon}</span>
                   <div>
                     <p className="text-xs text-gray-500">{item.label}</p>
-                    <p className="text-sm text-gray-300">{item.value}</p>
+                    {item.href ? (
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-gray-300 hover:text-blue-400 transition-colors duration-300"
+                      >
+                        {item.value}
+                      </a>
+                    ) : (
+                      <p className="text-sm text-gray-300">{item.value}</p>
+                    )}
                   </div>
                 </li>
               ))}
