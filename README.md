@@ -335,9 +335,9 @@ type Testimonial = {
 
 ## 📞 Contact
 
-- **Email:** hello@itperfect.com
-- **Phone:** +1 (555) 0123
-- **Address:** 123 Tech Street, San Francisco, CA 94105
+- **Email:** contact@itperfect.fr
+- **Phone:** +33 7 51 23 98 63
+- **Address:** Paris, France | [View on Maps](https://maps.app.goo.gl/1MeUxYUzqEfsXk696?g_st=awb)
 - **Website:** https://itperfect.com
 
 ---

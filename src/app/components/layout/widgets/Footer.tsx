@@ -27,7 +27,7 @@ export default function Footer() {
   const contactInfo = [
     { icon: "✉️", label: "Email", value: "contact@itperfect.fr" },
     { icon: "📱", label: "Phone", value: "+33 7 51 23 98 63" },
-    { icon: "📍", label: "Address", value: "Rwanda, Kigali" },
+    { icon: "📍", label: "Address", value: "Paris, France", href: "https://maps.app.goo.gl/1MeUxYUzqEfsXk696?g_st=awb" },
   ];
 
   return (

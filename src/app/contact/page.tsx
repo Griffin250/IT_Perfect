@@ -11,19 +11,20 @@ export default function ContactPage() {
       icon: "📧",
       title: "Email Us",
       description: "Send us an email and we'll respond within 24 hours",
-      details: ["hello@itperfect.com", "support@itperfect.com"],
+      details: ["contact@itperfect.fr"],
     },
     {
       icon: "📞",
       title: "Call Us",
       description: "Speak directly with our team during business hours",
-      details: ["+1 (555) 0123", "+1 (555) 0124"],
+      details: ["+33 7 51 23 98 63"],
     },
     {
       icon: "📍",
       title: "Visit Us",
       description: "Find us at our office location",
-      details: ["123 Tech Street", "San Francisco, CA 94105"],
+      details: ["Paris, France"],
+      link: "https://maps.app.goo.gl/1MeUxYUzqEfsXk696?g_st=awb",
     },
   ];
 
@@ -89,12 +90,22 @@ export default function ContactPage() {
                       </p>
                       <div className="space-y-1">
                         {method.details.map((detail, i) => (
-                          <p
-                            key={i}
-                            className="text-blue-600 dark:text-blue-400 font-medium"
-                          >
-                            {detail}
-                          </p>
+                          <div key={i}>
+                            {method.link && method.title === "Visit Us" ? (
+                              <a
+                                href={method.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
+                              >
+                                {detail}
+                              </a>
+                            ) : (
+                              <p className="text-blue-600 dark:text-blue-400 font-medium">
+                                {detail}
+                              </p>
+                            )}
+                          </div>
                         ))}
                       </div>
                     </div>
