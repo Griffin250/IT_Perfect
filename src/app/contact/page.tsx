@@ -24,7 +24,7 @@ export default function ContactPage() {
       title: "Visit Us",
       description: "Find us at our office location",
       details: ["76 Rue d'Auge, 14000 Caen, France"],
-      link: "https://maps.app.goo.gl/JF8kXjPqyZ7VzPGx8",
+      link: "https://www.google.com/maps/search/76+Rue+d'Auge,+14000+Caen,+France",
     },
   ];
 
@@ -198,7 +198,7 @@ export default function ContactPage() {
             </div>
             <div className="mt-6 text-center">
               <a
-                href="https://maps.app.goo.gl/JF8kXjPqyZ7VzPGx8"
+                href="https://www.google.com/maps/search/76+Rue+d'Auge,+14000+Caen,+France"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-300"

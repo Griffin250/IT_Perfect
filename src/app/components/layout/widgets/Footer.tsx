@@ -27,7 +27,7 @@ export default function Footer() {
   const contactInfo = [
     { icon: "✉️", label: "Email", value: "contact@itperfect.fr" },
     { icon: "📱", label: "Phone", value: "+33 7 51 23 98 63" },
-    { icon: "📍", label: "Address", value: "76 Rue d'Auge, 14000 Caen, France", href: "https://maps.app.goo.gl/JF8kXjPqyZ7VzPGx8" },
+    { icon: "📍", label: "Address", value: "76 Rue d'Auge, 14000 Caen, France", href: "https://www.google.com/maps/search/76+Rue+d'Auge,+14000+Caen,+France" },
   ];
 
   return (
