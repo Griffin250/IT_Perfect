@@ -8,6 +8,7 @@ import Stats from "./components/layout/pages/Stats";
 import CTA from "./components/layout/pages/CTA";
 import HomeFaq from "./components/layout/pages/HomeFaq";
 import TrustedCompanies from "./components/layout/pages/TrustedCompanies";
+import InfiniteTestimonials from "./components/layout/pages/InfiniteTestimonials";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           <WhyChooseUs />
         </div>
         <TrustedCompanies />
+        <InfiniteTestimonials />
         <CTA />
         <HomeFaq />
       </div>

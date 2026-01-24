@@ -48,12 +48,12 @@ const employees: Employee[] = [
   },
   {
     id: 6,
-    name: "Dominique Savio Manishime",
-    position: "Software Engineer",
+    name: "Isiah Griffin",
+    position: "Full Stack Engineer",
     image: "/avatar.png",
-    linkedIn: "https://www.linkedin.com/in/dominique-savio",
-    github: "https://github.com/dominiquesavio",
-    website: "https://dominiquesavio.dev",
+    linkedIn: "https://www.linkedin.com/in/isiah-tuyisenge/",
+    github: "https://github.com/griffin250",
+    website: "https://www.isiahgriffin.no/",
   },
 ];
 

@@ -3,17 +3,17 @@
 export default function Stats() {
   const stats = [
     {
-      number: "500+",
+      number: "100+",
       label: "Projects Completed",
       icon: "✓",
     },
     {
-      number: "150+",
+      number: "50+",
       label: "Happy Clients",
       icon: "😊",
     },
     {
-      number: "50+",
+      number: "5+",
       label: "Team Members",
       icon: "👥",
     },
