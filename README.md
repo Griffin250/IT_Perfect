@@ -1,6 +1,10 @@
-# IT Perfect
+<div align="center">
+  <img src="/companies/IT_PERFECT_LOGO.png" alt="IT Perfect Logo" width="120" height="120" />
+  
+  # IT Perfect
 
-**Where Technology Meets Ingenuity** 🚀
+  **Where Technology Meets Ingenuity** 🚀
+</div>
 
 A modern, full-featured web application for IT Perfect's digital solutions company. Built with Next.js 15, TypeScript, and Tailwind CSS for stunning performance and user experience.
 
@@ -331,9 +335,9 @@ type Testimonial = {
 
 ## 📞 Contact
 
-- **Email:** hello@itperfect.com
-- **Phone:** +1 (555) 0123
-- **Address:** 123 Tech Street, San Francisco, CA 94105
+- **Email:** contact@itperfect.fr
+- **Phone:** +33 7 51 23 98 63
+- **Address:** Paris, France | [View on Maps](https://maps.app.goo.gl/1MeUxYUzqEfsXk696?g_st=awb)
 - **Website:** https://itperfect.com
 
 ---

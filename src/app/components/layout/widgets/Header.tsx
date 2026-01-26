@@ -7,52 +7,44 @@ import { navLinks } from "@/app/helpers/stub-data/nav-links";
 import SideDrawer from "./Drawer";
 import Logo from "./Logo";
 import Button from "@/app/components/reusable/Button";
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import ThemeToggle from "@/app/components/reusable/ThemeToggle";
+import LanguageToggle from "@/app/components/reusable/LanguageToggle";
 
 export default function Header() {
   const pathname = usePathname();
-  const isDashboard = pathname === "/dashboard";
 
   return (
-    <header className="flex p-3 lg:p-6 items-center justify-between fixed z-50 top-0 bg-white w-screen shadow-lg">
+    <header className="flex p-3 lg:p-6 items-center justify-between fixed z-50 top-0 bg-white dark:bg-gray-900 w-screen shadow-lg dark:shadow-gray-800">
       <Logo />
       <nav className="hidden lg:flex">
         <ul className="flex gap-4 flex-row capitalize">
-          {navLinks.map((link) => (
-            <li
-              key={link.name}
-              className="bg-white hover:bg-gray-100 p-3 hover:rounded-md"
-            >
-              <Link href={link.href}>{link.name}</Link>
-            </li>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <li
+                key={link.name}
+                className={`p-3 hover:rounded-md transition-colors ${
+                  isActive
+                    ? "bg-primary text-white rounded-md dark:bg-primary"
+                    : "bg-white dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-white"
+                }`}
+              >
+                <Link href={link.href}>{link.name}</Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
-      <SignedOut>
-        <div className="hidden lg:flex flex-row items-center gap-3">
-          <Link href="#home">
-            <span className="text-primary mr-6">
-              <SignInButton mode="modal" />
-            </span>
-          </Link>
-          <Link href="#home">
-            <Button className="rounded-[1.875rem]">Get Started</Button>
-          </Link>
-        </div>
-      </SignedOut>
+      <div className="hidden lg:flex flex-row items-center gap-3">
+        <LanguageToggle />
+        <ThemeToggle />
+        <Link href="/contact">
+          <Button className="rounded-[1.875rem]">Get Started</Button>
+        </Link>
+      </div>
 
-      <SignedIn>
-        <div className="hidden lg:flex flex-row items-center gap-3">
-          <Link href={isDashboard ? "/" : "/"}>
-            <Button className="rounded-[1.875rem]">
-              {isDashboard ? "Home" : "Dashboard"}
-            </Button>
-          </Link>
-          <UserButton />
-        </div>
-      </SignedIn>
-
-      <div className="flex lg:hidden">
+      <div className="flex lg:hidden items-center gap-2">
+        <LanguageToggle />
         <SideDrawer
           buttonChildren={
             <MenuOutlinedIcon
