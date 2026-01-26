@@ -163,7 +163,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-gray-400 text-sm text-center md:text-left">
             <p>
-              © {new Date().getFullYear()} IT Perfect. All rights reserved.
+              © {new Date().getFullYear()} IT Perfect. All rights reserved!
             </p>
           </div>
           <div className="flex gap-6 text-sm text-gray-400">
