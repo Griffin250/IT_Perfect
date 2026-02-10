@@ -22,7 +22,7 @@ export default function Header() {
           height={100}
           alt="IT Perfect Logo"
           className="cursor-pointer w-24 h-24 dark:invert"
-          unoptimized
+          priority={true}
         />
       </Link>
       <nav className="hidden lg:flex">
