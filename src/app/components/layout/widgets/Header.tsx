@@ -9,6 +9,7 @@ import SideDrawer from "./Drawer";
 import Button from "@/app/components/reusable/Button";
 import ThemeToggle from "@/app/components/reusable/ThemeToggle";
 import LanguageToggle from "@/app/components/reusable/LanguageToggle";
+import Logo from "../../../../assets/IT_Perfect_Logo.png";
 
 export default function Header() {
   const pathname = usePathname();
@@ -17,7 +18,7 @@ export default function Header() {
     <header className="flex p-2 lg:p-4 items-center justify-between fixed z-50 top-0 bg-white dark:bg-gray-900 w-screen shadow-lg dark:shadow-gray-800">
       <Link href="/">
         <Image
-          src="/companies/IT_Perfect_Logo.png"
+          src={Logo}
           width={200}
           height={100}
           alt="IT Perfect Logo"
