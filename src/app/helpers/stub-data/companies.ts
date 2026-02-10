@@ -14,9 +14,5 @@ export const trustedCompanies = [
     name: "Palettes LTD",
     logo: "/companies/Palettes.png",
   },
-  {
-    id: 4,
-    name: "Docaposte",
-    logo: "/companies/Docaposte.png",
-  },
+
 ];
