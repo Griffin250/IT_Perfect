@@ -14,6 +14,7 @@ export default function Logo({ className }: LogoProps) {
         height={100}
         alt="IT Perfect Logo"
         className={` cursor-pointer w-24 h-24 dark:invert ${className}`}
+        unoptimized
       />
     </Link>
   );
