@@ -37,11 +37,11 @@ export default function Footer() {
           <div className="lg:col-span-1 flex flex-col">
             <Link href="/">
               <Image
-                src="/logo.png"
-                width={200}
-                height={80}
+                src="/companies/IT_Perfect_Logo.png"
+                width={300}
+                height={120}
                 alt="IT Perfect Logo"
-                className="w-32 mb-4 invert"
+                className="w-48 mb-4 invert"
               />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">

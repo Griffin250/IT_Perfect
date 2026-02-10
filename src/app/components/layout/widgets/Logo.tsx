@@ -9,11 +9,11 @@ export default function Logo({ className }: LogoProps) {
   return (
     <Link href="/">
       <Image
-        src="/logo.png"
-        width={250}
+        src="/companies/IT_Perfect_Logo.png"
+        width={200}
         height={100}
         alt="IT Perfect Logo"
-        className={` cursor-pointer w-[5.625rem] md:w-[10.625rem] lg:w-[15.625rem] dark:invert ${className}`}
+        className={` cursor-pointer w-24 h-24 dark:invert ${className}`}
       />
     </Link>
   );
