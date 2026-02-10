@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { OUR_SERVICES as services } from "@/app/helpers/stub-data/services";
+import Logo from "../../../../assets/IT_Perfect_Logo.png";
 
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -37,7 +38,7 @@ export default function Footer() {
           <div className="lg:col-span-1 flex flex-col">
             <Link href="/">
               <Image
-                src="/companies/IT_Perfect_Logo.png"
+                src={Logo}
                 width={300}
                 height={120}
                 alt="IT Perfect Logo"
